@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import ExecuteCrawler from '@/components/ExecuteCrawler.vue'
+import PatternCreate from '@/components/PatternCreate.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    name: 'ExecuteCrawler',
+    component: ExecuteCrawler
+  },
+  {
+    path: '/pattern/create',
+    name: 'PatternCreate',
+    component: PatternCreate
   },
 ]
 
