@@ -7,7 +7,9 @@
     <template v-slot="{ user, signOut }">
       <h1>Hello {{ user.username }}!</h1>
       <router-view />
-      <button @click="signOut">Sign Out</button>
+      <button @click="signOut">Sign Out</button><br>
+      <router-link to="/">go to Execute</router-link><br>
+      <router-link to="/pattern/create">go to create pettern</router-link>
     </template>
   </authenticator>
 </template>
