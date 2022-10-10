@@ -42,6 +42,7 @@ export default {
           id: this.id,
           password: this.password,
         },
+        headers: {'x-api-key': 'MGgxNW73jj3k3DqIH06Kr3VSWsLKBxXdaUpIqI9l'}
       });
     },
     async getSchedulePatterns() {
