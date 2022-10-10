@@ -1,12 +1,12 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const createSchedulePattern = /* GraphQL */ `
+  mutation CreateSchedulePattern(
+    $input: CreateSchedulePatternInput!
+    $condition: ModelSchedulePatternConditionInput
   ) {
-    createTodo(input: $input, condition: $condition) {
+    createSchedulePattern(input: $input, condition: $condition) {
       id
       name
       description
@@ -15,12 +15,12 @@ export const createTodo = /* GraphQL */ `
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
+export const updateSchedulePattern = /* GraphQL */ `
+  mutation UpdateSchedulePattern(
+    $input: UpdateSchedulePatternInput!
+    $condition: ModelSchedulePatternConditionInput
   ) {
-    updateTodo(input: $input, condition: $condition) {
+    updateSchedulePattern(input: $input, condition: $condition) {
       id
       name
       description
@@ -29,12 +29,12 @@ export const updateTodo = /* GraphQL */ `
     }
   }
 `;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
+export const deleteSchedulePattern = /* GraphQL */ `
+  mutation DeleteSchedulePattern(
+    $input: DeleteSchedulePatternInput!
+    $condition: ModelSchedulePatternConditionInput
   ) {
-    deleteTodo(input: $input, condition: $condition) {
+    deleteSchedulePattern(input: $input, condition: $condition) {
       id
       name
       description
