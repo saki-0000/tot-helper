@@ -15,6 +15,7 @@
 import { API } from 'aws-amplify';
 import { createTodo } from './graphql/mutations';
 import { listTodos } from './graphql/queries';
+import { onCreateTodo } from './graphql/subscriptions';
 
 export default {
   name: 'App',
@@ -47,6 +48,16 @@ export default {
         query: listTodos
       });
       this.todos = todos.data.listTodos.items;
+    },
+    subscribe() {
+      API.graphql({ query: onCreateTodo })
+        .subscribe({
+          next: (eventData) => {
+            let todo = eventData.value.data.onCreateTodo;
+            if (this.todos.some(item => item.name === todo.name)) return; // remove duplications
+            this.todos = [...this.todos, todo];
+          }
+        });
     }
   }
 }
